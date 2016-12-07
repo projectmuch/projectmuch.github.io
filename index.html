@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Project Much</title>
+    <style>
+        body { font-family: monospace, serif; font-size: 1em; min-width: 300px; }
+        header { font-size: 1.6em; text-align: center; padding-top: 50px; padding-bottom: 50px; text-transform: uppercase; }
+        section { position: relative; width: 80%; max-width: 1000px; margin: 0 auto; }
+        ol { list-style-type: upper-roman; list-style-position: outside; margin: 0 0 0 0.5em;}
+        span.title { padding-right: 15px; }
+        span.day { position: absolute; right: 0; }
+        li { height: 0.6em; margin-bottom: 0.4em; }
+        li a { text-decoration: none; color: inherit; display: block; }
+        li a span { background: white; }
+        li a span:first-child { margin-right: 20px; padding-right: 20px; }
+        li a span:last-child { padding-left: 20px; }
+
+        #indicator { display: flex; justify-content: space-between; text-transform: uppercase; font-size: 0.7em; padding-bottom: 10px;}
+
+        @media (min-width:  600px) { body { font-size: 1.3em; } li { border-bottom: 3px dotted; height: 0.7em; margin-bottom: 0.3em; } }
+        @media (min-width: 1000px) { body { font-size: 1.5em; } section { width: 70%; } ol { margin-left: 1em; } }
+
+    </style>
+</head>
+<body>
+    <header>Project Much</header>
+    <section id="projects">
+        <div id="indicator">
+            <span>Month</span><span>Day</span>
+        </div>
+        <ol start="12">
+            <li><a id="glitch" href=""><span>Project Title</span><span class="day">6</span></a></li>
+        </ol>
+    </section>
+</body>
+</html>
